@@ -1,0 +1,16 @@
+dotnet new webapi --no-https
+dotnet build
+dotnet run
+
+
+https://docs.microsoft.com/pt-br/aspnet/core/web-api/http-repl/?view=aspnetcore-5.0&tabs=linux
+dotnet tool install -g Microsoft.dotnet-httprepl
+httprepl http://localhost:5000/
+command
+ls | cd 
+cd Pizza 
+get        # getAll pizza
+get 1      # get(1) pizza/1
+delete 1   # delele pizza/1
+post  -c "{}"
+put   -c "{}"      
